@@ -11,7 +11,12 @@
 #ifdef RGB_LED_OFF_DEFAULT
 #undef RGB_LED_OFF_DEFAULT
 #endif
-#define RGB_LED_OFF_DEFAULT 0x18  // low, rainbow
+#define RGB_LED_OFF_DEFAULT 0x10  // low, red
+
+#ifdef RGB_LED_LOCKOUT_DEFAULT
+#undef RGB_LED_LOCKOUT_DEFAULT
+#endif
+#define RGB_LED_LOCKOUT_DEFAULT 0x30  // low, blinking
 
 // half a second per color in rainbow mode
 //#define RGB_RAINBOW_SPEED 0x03
@@ -23,8 +28,11 @@
 #define USE_EXTENDED_SIMPLE_UI
 
 // double click while on goes to full-power turbo, not ramp ceiling
-#define DEFAULT_2C_STYLE 1
+#define DEFAULT_2C_STYLE 2
 
 // for consistency with KR4 (not otherwise necessary though)
 #define USE_SOFT_FACTORY_RESET
 
+#define DEFAULT_MANUAL_MEMORY 70
+#define DEFAULT_MANUAL_MEMORY_TIMER 0
+#define DEFAULT_RAMP_SPEED 3
