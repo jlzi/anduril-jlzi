@@ -1,0 +1,14 @@
+/dev/ttyUSB0
+
+
+0281      avr32dd20   hank-lume-x1
+
+
+avrdude -c serialupdi -P /dev/ttyUSB0 -p avr32dd20 -n
+
+
+avrdude -c serialupdi -P /dev/ttyUSB0 -p avr32dd20 -U flash:r:original-D4K-firwmare.hex:i -n
+avrdude -c serialupdi -P /dev/ttyUSB0 -p avr32dd20 -U eeprom:r:original-D4K-eeprom.hex:i -n
+
+
+avrdude -c serialupdi -P /dev/ttyUSB0 -p avr32dd20 -U flash:w:anduril.hank-lume-x1.hex -n
