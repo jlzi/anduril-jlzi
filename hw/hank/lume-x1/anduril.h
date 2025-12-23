@@ -50,7 +50,7 @@
 #define DEFAULT_LEVEL  50
 #define MAX_1x7135     49
 
-#define RAMP_SMOOTH_FLOOR    15
+#define RAMP_SMOOTH_FLOOR    12
 #define RAMP_SMOOTH_CEIL   120
 
 #define RAMP_DISCRETE_FLOOR   10
